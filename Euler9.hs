@@ -1,0 +1,1 @@
+main = print $ head $ [truncate a * truncate b * truncate c | a <- [1..500], b <- [a..500], let c = sqrt (a ^ 2 + b ^ 2), a + b + c == 1000]
